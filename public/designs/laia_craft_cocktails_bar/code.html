@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#101411;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-obsidian": "#121814", "inverse-surface": "#e0e3de", "surface-dim": "#101411", "outline": "#8e9288", "tertiary": "#fabc4d", "secondary": "#ffb597", "surface-container": "#1c211d", "on-secondary": "#581e00", "primary-container": "#3e5434", "on-tertiary-fixed": "#281900", "surface-container-high": "#272b27", "text-muted": "#DED7CB", "on-primary-container": "#aec79f", "glass-border": "rgba(222, 215, 203, 0.12)", "secondary-fixed-dim": "#ffb597", "secondary-container": "#783515", "error-container": "#93000a", "olive-deep": "#2D4231", "surface": "#101411", "inverse-on-surface": "#2d312e", "on-primary-fixed-variant": "#374d2d", "on-secondary-container": "#ffa178", "surface-noir": "#0C100D", "on-tertiary-container": "#f3b547", "surface-container-low": "#181d19", "on-background": "#e0e3de", "surface-tint": "#b4cea5", "primary": "#b4cea5", "surface-aegean": "#18221B", "secondary-fixed": "#ffdbcd", "sunlit-gold": "#E5A93C", "surface-container-lowest": "#0b0f0c", "on-secondary-fixed": "#360f00", "background": "#101411", "inverse-primary": "#4e6543", "on-surface": "#e0e3de", "on-surface-variant": "#c4c8bd", "surface-container-highest": "#323632", "on-primary-fixed": "#0c2006", "surface-bright": "#363a36", "outline-variant": "#444840", "glass-surface": "rgba(18, 24, 20, 0.65)", "on-tertiary": "#432c00", "tertiary-container": "#694800", "on-secondary-fixed-variant": "#753313", "terracotta-copper": "#D47D57", "tertiary-fixed-dim": "#fabc4d", "text-champagne": "#F3EEE7", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#604100", "olive-foliage": "#405D45", "primary-fixed-dim": "#b4cea5", "surface-variant": "#323632", "on-error-container": "#ffdad6", "on-primary": "#213619", "primary-fixed": "#d0eac0", "on-error": "#690005", "tertiary-fixed": "#ffdead" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1.25rem", "space-sm": "0.5rem", "margin": "3rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "label-lg": ["Manrope"], "body-sm": ["Manrope"], "label-sm": ["Manrope"], "label-md": ["Manrope"], "display-mobile": ["Playfair Display"], "title-lg": ["Manrope"], "headline-sm": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "body-md": ["Manrope"], "display": ["Playfair Display"], "headline-lg": ["Playfair Display"], "title-md": ["Manrope"], "body-lg": ["Manrope"], "title-sm": ["Manrope"], "headline-md": ["Playfair Display"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }], "display-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "title-md": ["17px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "title-sm": ["15px", { "lineHeight": "22px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-terracotta-copper selection:text-surface-noir"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-noir/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #3a4d39 - Font: playfairDisplay - Mode: light - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UigZX84zeny8OG8gEvUZKAXjKzspFWXSbppgzm-J0FWZexPPErwG7InUjsNoTA0qffblDjg_a3Dpxt5ojtG2SjwNhEoEaH46V8DgSMH-v8FEtJIF4HNTA5aF7uBWYc9A6HfwxhmUZPwO6djwjNC_bHFToMxteq6XuvH3LryqPU038a9GTeyTeBsyNJEDxkRPEvClzuekbWnnIpQHQXHuZ550W4AZdTWKDsDNQ5SESxhQx0EoOSrNyG5YHX"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-champagne tracking-tight leading-none">Élaia</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-medium mt-0.5">Cocktails</span></div></div><div class="flex items-center gap-space-xs"><a class="w-11 h-11 flex items-center justify-center rounded-full text-text-muted hover:text-tertiary transition-colors active:scale-95" data-path="reserve" href="#"><span class="material-symbols-outlined text-[20px]">table_restaurant</span></a><a class="w-11 h-11 flex items-center justify-center" data-path="guest-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-glass-border shadow-[0_0_12px_rgba(229,169,60,0.12)]" src="https://lh3.googleusercontent.com/aida/AEtjO1VobU00NXTIR47Tvrx84tSEcBfb1IonQaRbTXOX0JMNU6R20A7i2hUqYgijD42z1KVWeR857HZuvnu0_f6-jUPejz20ZtG4up0UQYFETNXxo4P2HhAtDHxJz3NYDefFHHZGbjmYX6vbUdTzuehIyKAjW-UjL2-MLQfIjF9rt3d8kpL51OphPgJOPfj_3Jh_yCakrui4v4RyJn8b-RRYQEBbUWPv7tEJFGLZpww3GEg2h5cElLkkqKbdplc"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Editorial Header & Intro -->
+<section class="px-margin-mobile pt-space-lg pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-sunlit-gold animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-medium">Libations &amp; Elixirs</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-text-champagne font-medium tracking-tight">The Botanical Cellar &amp; Bar</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Slow-infused spirits, Mediterranean botanicals, mountain herbs, and coastal aperitifs curated for twilight dining.
+    </p>
+</section>
+<!-- Search & Tactile Filter Input -->
+<section class="px-margin-mobile py-space-sm">
+<div class="relative flex items-center">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-text-muted/60">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-11 pr-12 rounded-xl bg-surface-obsidian text-text-champagne placeholder:text-outline font-body-sm text-body-sm transition-all focus:outline-none focus:bg-surface-container shadow-inner" id="cocktail-search" placeholder="Search cocktails, botanicals, wines..." type="text"/>
+<button aria-label="Filter menu" class="absolute right-1.5 w-9 h-9 rounded-lg bg-surface-container-high text-sunlit-gold hover:text-text-champagne flex items-center justify-center active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</button>
+</div>
+</section>
+<!-- Interactive Category Chips (Horizontal Scrollable) -->
+<section class="py-space-sm">
+<div class="flex items-center gap-2.5 overflow-x-auto px-margin-mobile no-scrollbar select-none" id="category-track">
+<button class="category-btn active px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md uppercase tracking-wider bg-terracotta-copper text-surface-noir transition-all shadow-md" data-category="all">
+        Signature (8)
+      </button>
+<button class="category-btn px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md uppercase tracking-wider bg-surface-container text-text-muted hover:text-text-champagne hover:bg-surface-container-high transition-all" data-category="spritz">
+        Aegean Spritzes (5)
+      </button>
+<button class="category-btn px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md uppercase tracking-wider bg-surface-container text-text-muted hover:text-text-champagne hover:bg-surface-container-high transition-all" data-category="zeroproof">
+        Zero-Proof Elixirs (4)
+      </button>
+<button class="category-btn px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md uppercase tracking-wider bg-surface-container text-text-muted hover:text-text-champagne hover:bg-surface-container-high transition-all" data-category="wine">
+        Artisan Greek Wines
+      </button>
+<button class="category-btn px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md uppercase tracking-wider bg-surface-container text-text-muted hover:text-text-champagne hover:bg-surface-container-high transition-all" data-category="digestif">
+        Digestifs &amp; Mastiha
+      </button>
+</div>
+</section>
+<!-- Featured Cocktail of the House (Velvet Pour Editorial Card) -->
+<section class="px-margin-mobile py-space-sm">
+<div class="relative overflow-hidden rounded-xl bg-surface-obsidian shadow-xl">
+<!-- Glow & Scrim Backdrop -->
+<div class="relative h-64 w-full overflow-hidden">
+<img class="w-full h-full object-cover object-center transform scale-105 transition-transform duration-700" data-alt="Editorial close up of a smoky dark Mediterranean craft cocktail with charred sprig of mountain thyme, charred lemon wheel, crystal rock glass on volcanic charcoal slate, amber liquid glowing in candlelight, moody cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8f_BVM02AWzAkKIW8BhiUaDYXoRKgcb40sFFbEcazyliYIzw1jwftvEI-G1TPxfjMMlYbeRu8TyLIITuSgdro-VSAf8Vi6wzw_WHD9yQUBfnik_H7MfzHWlKnH9EYhsBbx2YyCU3jeS-hd7Crpb1bcMGRFpCAZww-DAQnKJcCOlV9ZyEEm7wUoZTs0tocjRAn3MGkrJTCSuQAonVoO3jMBeCGxkFjPm1UDLrTXvEnUh_qfe_6ww8x1g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-obsidian via-surface-obsidian/60 to-transparent"></div>
+<div class="absolute top-3.5 left-3.5 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-noir/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-[15px] text-sunlit-gold" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-champagne font-medium">House Signature Spotlight</span>
+</div>
+</div>
+<div class="p-space-lg -mt-10 relative z-10 flex flex-col gap-space-sm bg-gradient-to-b from-transparent via-surface-obsidian to-surface-obsidian">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-text-champagne">The Cycladic Smoke</h2>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mt-0.5">Charred Herbal • Coastal Saline</span>
+</div>
+<span class="font-title-lg text-title-lg text-terracotta-copper font-semibold">$21</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Mezcal infused with wild charred thyme, Cretan thyme honey liqueur, grilled Meyer lemon squeeze, finished with a hand-harvested smoked sea salt rim and aromatic mist.
+        </p>
+<!-- Sensory Profile Badges -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px] text-sunlit-gold">spa</span>
+<span class="font-label-sm text-label-sm">Herbaceous</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px] text-terracotta-copper">smoke_free</span>
+<span class="font-label-sm text-label-sm">Smoky Earth</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px] text-primary">grain</span>
+<span class="font-label-sm text-label-sm">Citrus Crisp</span>
+</div>
+</div>
+<!-- Action Add Row -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span class="font-label-sm text-label-sm text-text-muted/80">Signature Bar Keepsake</span>
+</div>
+<button class="add-drink-btn flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-terracotta-copper text-surface-noir hover:bg-sunlit-gold transition-colors font-label-md text-label-md uppercase tracking-wider active:scale-95 shadow-md" onclick="addDrink('The Cycladic Smoke', 21)" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add to Order</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Cocktail Cards Grid / List -->
+<section class="px-margin-mobile py-space-sm flex flex-col gap-space-md" id="drinks-list">
+<!-- Item 1: Aegean Citrus & Rosemary Mojito -->
+<article class="drink-item flex flex-col bg-surface-obsidian rounded-xl overflow-hidden shadow-md transition-all hover:bg-surface-container-low" data-category="spritz" data-name="Aegean Citrus &amp; Rosemary Mojito" data-price="18">
+<div class="flex flex-row gap-space-md p-space-md">
+<div class="relative w-24 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-noir">
+<img class="w-full h-full object-cover" data-alt="Tall Collins glass filled with crushed ice, sparkling Aegean cocktail, crushed fresh mint, bergamot slice, charred rosemary sprig with soft wisps of herb smoke in dim ambient Mediterranean bistro setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2-hx3dY34OxUACKeDepvxS62AJIlJYnf6BmzUbIYFO9faOsLgZ323RcNooOR5Dc6qeHXAtNI5A6obEPMHPj0NPK6ROD_oYV9DkdzMtWtW2lOPbjONbRhtfLqvPWOMZ24SnCgRWGqivvboIyT43Hwca8D-RPAtq27l11lBprGJOajgCH346juDymG-1W16MvR9VgmAnJ2UGozjKiuLhik2OwIBO5KGzWdxdeXRq7XmnhIXnmDRNlQERA"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-noir/80 text-primary font-label-sm text-[10px] uppercase font-bold">GF / VG</div>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[19px] leading-tight text-text-champagne truncate">Aegean Citrus &amp; Rosemary</h3>
+<span class="font-title-md text-title-md text-terracotta-copper font-medium ml-1 flex-shrink-0">$18</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Aged white rum, muddled wild mint, cold-pressed bergamot juice, carbonated spring soda, torched rosemary.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-text-muted/70 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-sunlit-gold">local_bar</span>
+              Highball • Refreshing
+            </span>
+<button aria-label="Add Aegean Citrus &amp; Rosemary" class="w-8 h-8 rounded-full bg-surface-container-high text-primary hover:bg-terracotta-copper hover:text-surface-noir flex items-center justify-center transition-all active:scale-90" onclick="addDrink('Aegean Citrus &amp; Rosemary', 18)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 2: Violet & Pomegranate Breeze -->
+<article class="drink-item flex flex-col bg-surface-obsidian rounded-xl overflow-hidden shadow-md transition-all hover:bg-surface-container-low" data-category="signature" data-name="Violet &amp; Pomegranate Breeze" data-price="19">
+<div class="flex flex-row gap-space-md p-space-md">
+<div class="relative w-24 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-noir">
+<img class="w-full h-full object-cover" data-alt="Delicate coupe glass with deep ruby pomegranate cocktail garnished with floating purple edible violets and lavender bitters, dim moody luxury bar atmosphere with soft golden reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUpC1I1LAxjrkUOkSS_wQZh1dHQHV5Jc8zapb3VFXB1W2go669Kewd-MHYTPPeLDq5uCyLfLi4pnHPqavWNXT2P3g7yFzXTp3SPafQNwYqkpETZFbRgQoCjJ6yEaNzLD2U3JwpLQEIQa5KeEmtwXJaN8Z76Rx4W59L_OhFSJ9kfPLNXYJoK8tONPPqY4W6oontZcGnaqAUjClIt3toRQeRbD94HjvS1ZcKg5HnX3oUDrTTzr8ggJqx-w"/>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[19px] leading-tight text-text-champagne truncate">Violet &amp; Pomegranate</h3>
+<span class="font-title-md text-title-md text-terracotta-copper font-medium ml-1 flex-shrink-0">$19</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Wild mountain Greek gin, organic pomegranate shrub, St-Germain elderflower, lavender bitters, fresh blossom.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-text-muted/70 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">filter_vintage</span>
+              Coupe • Floral Velvet
+            </span>
+<button aria-label="Add Violet &amp; Pomegranate" class="w-8 h-8 rounded-full bg-surface-container-high text-primary hover:bg-terracotta-copper hover:text-surface-noir flex items-center justify-center transition-all active:scale-90" onclick="addDrink('Violet &amp; Pomegranate', 19)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 3: Corfu Kumquat Negroni -->
+<article class="drink-item flex flex-col bg-surface-obsidian rounded-xl overflow-hidden shadow-md transition-all hover:bg-surface-container-low" data-category="signature" data-name="Corfu Kumquat Negroni" data-price="20">
+<div class="flex flex-row gap-space-md p-space-md">
+<div class="relative w-24 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-noir">
+<img class="w-full h-full object-cover" data-alt="Heavy cut-crystal lowball tumbler with oversized clear ice cube, vivid amber-orange Kumquat Negroni cocktail, dehydrated orange slice, dark polished walnut counter with warm candle flicker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkFb8O40KaiYxAtKaC1Ju_liee5g21A_sqPin6nseoAEBNZXBAQi6QmHHbz70QaS81iCJ0TyoXMkKyJbwPmIYTLAitAukVc9Yanz2HbVwjAuCHnBwXbSN-gVjymbArWFy-NRXs7Iar2gT5XS1zB83GbW4QVBi2bJyRNcam21D_mUi78_mkHt3V0E2ThAZKcq0PJcf2BnAFphncydWXfRTQbq5-k7JWyAfSCWIa0LPKpbCM-bHZSbSAxA"/>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[19px] leading-tight text-text-champagne truncate">Corfu Kumquat Negroni</h3>
+<span class="font-title-md text-title-md text-terracotta-copper font-medium ml-1 flex-shrink-0">$20</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Greek botanical gin, sweet vermouth di Torino, infused Ionian kumquat cordial, bitter orange oil express.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-text-muted/70 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-terracotta-copper">auto_awesome</span>
+              Lowball • Bittersweet
+            </span>
+<button aria-label="Add Corfu Kumquat Negroni" class="w-8 h-8 rounded-full bg-surface-container-high text-primary hover:bg-terracotta-copper hover:text-surface-noir flex items-center justify-center transition-all active:scale-90" onclick="addDrink('Corfu Kumquat Negroni', 20)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 4: Olive Grove Martini -->
+<article class="drink-item flex flex-col bg-surface-obsidian rounded-xl overflow-hidden shadow-md transition-all hover:bg-surface-container-low" data-category="signature" data-name="Olive Grove Martini" data-price="22">
+<div class="flex flex-row gap-space-md p-space-md">
+<div class="relative w-24 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-noir">
+<img class="w-full h-full object-cover" data-alt="Chilled Nick &amp; Nora glass holding crystal-clear olive martini, olive-leaf infusion, bamboo pick with three glossy green castelvetrano olives, delicate droplets of olive oil floating on surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHbDgqe8yi1sYnSLz_Kw7VxWSxtprRTctqva0MiWcM3RwcEIXI1FfJ4ovUq5HG2BSyioNAPI1X_wg182jZevARIF__2KdsDZY5nQlRDJLlbu-FVMrj1EsQp56-0Fjr_QmpgrRacXYWpgjDq5CKyDNjCCyuItxy99Y3L_Oa4yu9EV2PSrTDBm95BqOynh0bxdILkfc7s1R7XRLKE47DbWDvg-mvG3Ib9LLrhNqPtGOFKkkaI8muIMfjcQ"/>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[19px] leading-tight text-text-champagne truncate">Olive Grove Martini</h3>
+<span class="font-title-md text-title-md text-terracotta-copper font-medium ml-1 flex-shrink-0">$22</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Kalamata olive leaf-infused vodka, extra dry vermouth, aged caperberry brine, skewered castelvetrano olives.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-text-muted/70 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">psychiatry</span>
+              Nick &amp; Nora • Savory
+            </span>
+<button aria-label="Add Olive Grove Martini" class="w-8 h-8 rounded-full bg-surface-container-high text-primary hover:bg-terracotta-copper hover:text-surface-noir flex items-center justify-center transition-all active:scale-90" onclick="addDrink('Olive Grove Martini', 22)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 5: Zero-Proof Mount Olympus Elixir -->
+<article class="drink-item flex flex-col bg-surface-obsidian rounded-xl overflow-hidden shadow-md transition-all hover:bg-surface-container-low" data-category="zeroproof" data-name="Zero-Proof Mount Olympus Elixir" data-price="14">
+<div class="flex flex-row gap-space-md p-space-md">
+<div class="relative w-24 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-noir">
+<img class="w-full h-full object-cover" data-alt="Elegant frosted stemless glass filled with golden mountain herbal mocktail, garnished with fresh wild chamomile flowers and dried lemon wheel against evening dark Mediterranean restaurant background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdmzE79xLkq9CVuuzBuYN-Bh79pyOe3Pb3HwRqXAOB7Fi11ttWhgteq4AtyTRGaud2rILoSIe6IWHh96xJVmuI_nJvYAbNvIGAcZDgFe6AcqgR8IPzeNtDgXogRiUnZt8qgQCYjDreE1cn5hfCUd2b-LisJsPTLabKZvl4KPSFxAdXRv9hGR6REkoMwfmvALMBpAdcz6VehZ7qy1qfqpO_0OgWGleBe9QWNUH_z2ZHrVDlUD_kbHR4Pw"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-noir/80 text-sunlit-gold font-label-sm text-[10px] uppercase font-bold">0% ABV</div>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[19px] leading-tight text-text-champagne truncate">Mount Olympus Elixir</h3>
+<span class="font-title-md text-title-md text-terracotta-copper font-medium ml-1 flex-shrink-0">$14</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Non-alcoholic copper distilled botanicals, Mount Olympus mountain tea brew, raw wildflower honey, lemon, artisanal tonic.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-text-muted/70 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-sunlit-gold">eco</span>
+              Zero Proof • Botanical
+            </span>
+<button aria-label="Add Mount Olympus Elixir" class="w-8 h-8 rounded-full bg-surface-container-high text-primary hover:bg-terracotta-copper hover:text-surface-noir flex items-center justify-center transition-all active:scale-90" onclick="addDrink('Mount Olympus Elixir', 14)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Curated Food Pairings Banner -->
+<section class="px-margin-mobile py-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sunlit-gold text-[20px]">room_service</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-text-champagne font-semibold">Chef's Bar Pairings</span>
+</div>
+<span class="font-label-sm text-label-sm text-terracotta-copper font-medium">Mezze Kitchen</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Elevate your pour with hearth mezze specifically paired by Executive Chef Kostas to highlight botanical and saline profiles:
+      </p>
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<div class="p-2.5 rounded-lg bg-surface-obsidian flex flex-col gap-1">
+<span class="font-title-sm text-[13px] text-text-champagne font-semibold truncate">Truffle Taramosalata</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant line-clamp-1">Warm Za'atar Flatbread</span>
+<span class="font-label-sm text-label-sm text-terracotta-copper mt-1">$16 • Pairs with Negroni</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-obsidian flex flex-col gap-1">
+<span class="font-title-sm text-[13px] text-text-champagne font-semibold truncate">Saganaki Bites</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant line-clamp-1">Charred Fig &amp; Thyme</span>
+<span class="font-label-sm text-label-sm text-terracotta-copper mt-1">$15 • Pairs with Mezcal</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Cellar Notes & Artisan Spirits Note -->
+<section class="px-margin-mobile pt-space-xs pb-space-xl flex flex-col items-center text-center gap-space-xs">
+<span class="material-symbols-outlined text-[28px] text-primary/70">liquor</span>
+<h4 class="font-headline-sm text-title-md text-text-champagne">House Distillations &amp; Mastiha Spirits</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+      All our botanical infusions are aged in small terracotta amphorae behind the main marble hearth bar.
+    </p>
+</section>
+<!-- Sticky Bar Tab Order Drawer / Floating Tray -->
+<aside class="sticky bottom-20 z-40 px-margin-mobile pb-3">
+<div class="p-space-md rounded-xl bg-surface-noir/95 backdrop-blur-xl shadow-2xl flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-sunlit-gold relative">
+<span class="material-symbols-outlined text-[20px]">wine_bar</span>
+<span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-terracotta-copper text-surface-noir font-label-sm text-[10px] font-bold flex items-center justify-center" id="tab-count-badge">2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted/80">Active Bar Tab</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-title-sm text-title-sm text-text-champagne" id="tab-summary-text">2 Selections</span>
+<span class="text-on-surface-variant font-body-sm">•</span>
+<span class="font-title-sm text-title-sm text-terracotta-copper font-semibold" id="tab-total-amount">$39.00</span>
+</div>
+</div>
+</div>
+<button class="px-4 py-2.5 rounded-lg bg-terracotta-copper text-surface-noir hover:bg-sunlit-gold transition-all font-label-md text-label-md uppercase tracking-wider flex items-center gap-1.5 active:scale-95 shadow-md whitespace-nowrap" id="send-tab-btn" type="button">
+<span>Send to Table</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</aside>
+</div>
+<script>
+  (function initCocktailsExperience() {
+    let barTab = [
+      { name: 'The Cycladic Smoke', price: 21 },
+      { name: 'Aegean Citrus & Rosemary', price: 18 }
+    ];
+
+    const tabBadge = document.getElementById('tab-count-badge');
+    const tabSummary = document.getElementById('tab-summary-text');
+    const tabTotal = document.getElementById('tab-total-amount');
+    const sendTabBtn = document.getElementById('send-tab-btn');
+    const searchInput = document.getElementById('cocktail-search');
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const drinkItems = document.querySelectorAll('.drink-item');
+
+    function updateTabUI() {
+      const count = barTab.length;
+      const total = barTab.reduce((acc, curr) => acc + curr.price, 0);
+      
+      if (tabBadge) tabBadge.textContent = count;
+      if (tabSummary) tabSummary.textContent = count === 1 ? '1 Selection' : count + ' Selections';
+      if (tabTotal) tabTotal.textContent = '$' + total.toFixed(2);
+    }
+
+    window.addDrink = function(drinkName, price) {
+      barTab.push({ name: drinkName, price: price });
+      updateTabUI();
+
+      // Tactile button confirmation
+      if (sendTabBtn) {
+        sendTabBtn.classList.add('scale-105');
+        setTimeout(() => sendTabBtn.classList.remove('scale-105'), 200);
+      }
+    };
+
+    if (sendTabBtn) {
+      sendTabBtn.addEventListener('click', () => {
+        const originalText = sendTabBtn.innerHTML;
+        sendTabBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span><span>Sent to Bartender</span>';
+        sendTabBtn.classList.replace('bg-terracotta-copper', 'bg-primary');
+        setTimeout(() => {
+          sendTabBtn.innerHTML = originalText;
+          sendTabBtn.classList.replace('bg-primary', 'bg-terracotta-copper');
+        }, 2200);
+      });
+    }
+
+    // Category button toggling
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryBtns.forEach(b => {
+          b.classList.remove('active', 'bg-terracotta-copper', 'text-surface-noir', 'shadow-md');
+          b.classList.add('bg-surface-container', 'text-text-muted');
+        });
+        btn.classList.add('active', 'bg-terracotta-copper', 'text-surface-noir', 'shadow-md');
+        btn.classList.remove('bg-surface-container', 'text-text-muted');
+
+        const cat = btn.getAttribute('data-category');
+        drinkItems.forEach(item => {
+          if (cat === 'all' || item.getAttribute('data-category') === cat) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Realtime search filtering
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const val = e.target.value.toLowerCase().trim();
+        drinkItems.forEach(item => {
+          const title = item.getAttribute('data-name').toLowerCase();
+          const desc = item.innerText.toLowerCase();
+          if (title.includes(val) || desc.includes(val)) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-obsidian/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(12,16,13,0.4)]" data-active-classes="text-terracotta-copper font-medium drop-shadow-[0_0_10px_rgba(212,125,87,0.35)]"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-text-muted/65 hover:text-text-champagne transition-all duration-300" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">local_florist</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-text-muted/65 hover:text-text-champagne transition-all duration-300" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Menu</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] transition-all duration-300 text-terracotta-copper font-medium drop-shadow-[0_0_10px_rgba(212,125,87,0.35)]" data-path="cocktails" href="#"><span class="material-symbols-outlined text-[22px]">liquor</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Cocktails</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-text-muted/65 hover:text-text-champagne transition-all duration-300" data-path="reserve" href="#"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Reserve</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-text-muted/65 hover:text-text-champagne transition-all duration-300" data-path="story" href="#"><span class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Story</span></a></div></nav></body></html>

@@ -1,0 +1,205 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UserRole {
+  ADMIN
+  STAFF
+}
+
+enum ReservationStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+  NO_SHOW
+}
+
+enum GalleryCategory {
+  FOOD
+  RESTAURANT
+  PEOPLE
+  ATMOSPHERE
+}
+
+enum BlogPostStatus {
+  DRAFT
+  PUBLISHED
+}
+
+model User {
+  id           String     @id @default(cuid())
+  email        String     @unique
+  passwordHash String
+  name         String
+  role         UserRole   @default(STAFF)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  auditLogs    AuditLog[]
+
+  @@map("users")
+}
+
+model MenuCategory {
+  id           String     @id @default(cuid())
+  name         String
+  slug         String     @unique
+  description  String?
+  displayOrder Int        @default(0)
+  items        MenuItem[]
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@map("menu_categories")
+}
+
+model MenuItem {
+  id           String       @id @default(cuid())
+  name         String
+  slug         String       @unique
+  description  String
+  ingredients  String       // JSON array or comma-separated
+  price        Decimal      @db.Decimal(10, 2)
+  imageUrl     String
+  categoryId   String
+  category     MenuCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  dietaryTags  String       @default("[]") // JSON array of tags e.g. ["Gluten-Free", "Vegetarian"]
+  allergens    String       @default("[]") // JSON array e.g. ["Shellfish", "Dairy"]
+  isAvailable  Boolean      @default(true)
+  isFeatured   Boolean      @default(false)
+  displayOrder Int          @default(0)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@index([categoryId, isAvailable, isFeatured])
+  @@map("menu_items")
+}
+
+model Reservation {
+  id             String            @id @default(cuid())
+  bookingRef     String            @unique
+  customerName   String
+  customerEmail  String
+  customerPhone  String
+  date           DateTime          @db.Date
+  timeSlot       String            // e.g. "18:00", "19:30"
+  partySize      Int
+  seatingArea    String            @default("MAIN") // "PATIO", "MAIN", "COUNTER"
+  specialRequest String?
+  status         ReservationStatus @default(CONFIRMED)
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+
+  @@index([date, status, customerEmail])
+  @@map("reservations")
+}
+
+model Chef {
+  id              String   @id @default(cuid())
+  name            String
+  slug            String   @unique
+  roleTitle       String   // e.g. "Executive Chef & Co-Founder"
+  bio             String
+  imageUrl        String
+  signatureDishes String   @default("[]") // JSON array of dish names
+  displayOrder    Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("chefs")
+}
+
+model Testimonial {
+  id             String   @id @default(cuid())
+  authorName     String
+  diningOccasion String   // e.g. "Anniversary Dinner", "Tasting Experience"
+  quote          String
+  rating         Int      @default(5)
+  isVerified     Boolean  @default(true)
+  isPublished    Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@map("testimonials")
+}
+
+model GalleryImage {
+  id           String          @id @default(cuid())
+  title        String
+  imageUrl     String
+  category     GalleryCategory @default(FOOD)
+  displayOrder Int             @default(0)
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+
+  @@map("gallery_images")
+}
+
+model BlogPost {
+  id            String         @id @default(cuid())
+  title         String
+  slug          String         @unique
+  summary       String
+  content       String
+  coverImageUrl String
+  authorName    String
+  status        BlogPostStatus @default(DRAFT)
+  publishedAt   DateTime?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@index([slug, status])
+  @@map("blog_posts")
+}
+
+model RestaurantSettings {
+  id                String   @id @default("default")
+  restaurantName    String   @default("Élaia Mediterranean Table")
+  tagline           String   @default("Rooted in Heritage & Sun-Drenched Soil")
+  address           String   @default("428 Coastal Vista Way, Marina Promenade")
+  phone             String   @default("+1 (800) 555-3524")
+  email             String   @default("reservations@elaia-table.com")
+  openingHours      String   // JSON string of weekday/weekend hours
+  timezone          String   @default("America/New_York")
+  slotLengthMinutes Int      @default(30)
+  maxPartySize      Int      @default(12)
+  maxDaysAhead      Int      @default(30)
+  capacityPerSlot   Int      @default(40)
+  socialLinks       String   @default("{}") // JSON string of social profiles
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@map("restaurant_settings")
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@map("contact_messages")
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action     String   // e.g. "MENU_ITEM_CREATE", "RESERVATION_STATUS_CHANGE"
+  entityType String   // e.g. "MenuItem", "Reservation"
+  entityId   String?
+  details    String?  // JSON string of changes
+  ipAddress  String?
+  createdAt  DateTime @default(now())
+
+  @@map("audit_logs")
+}

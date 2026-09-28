@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary": "#ffffff", "surface-container-highest": "#e5e2dd", "outline-variant": "#c3c8bf", "primary-container": "#3a4d39", "surface-bright": "#fcf9f4", "on-error-container": "#93000a", "on-secondary": "#ffffff", "inverse-on-surface": "#f3f0eb", "primary-fixed": "#d2e9ce", "on-surface": "#1c1c19", "on-surface-variant": "#434842", "on-error": "#ffffff", "on-tertiary-fixed": "#001e2e", "tertiary-fixed": "#cae6fd", "on-secondary-fixed-variant": "#7d2c13", "surface-dim": "#dcdad5", "on-tertiary-fixed-variant": "#2e4a5c", "on-secondary-fixed": "#3a0a00", "on-primary-fixed": "#0e1f0f", "surface-container-lowest": "#ffffff", "surface-container-high": "#ebe8e3", "background": "#fcf9f4", "primary": "#243624", "tertiary-container": "#304b5e", "error": "#ba1a1a", "inverse-surface": "#31302d", "secondary-fixed-dim": "#ffb59f", "surface": "#fcf9f4", "inverse-primary": "#b7cdb2", "surface-container": "#f0ede9", "on-primary-container": "#a7bda4", "tertiary": "#183446", "secondary": "#9c4328", "primary-fixed-dim": "#b7cdb2", "surface-container-low": "#f6f3ee", "secondary-container": "#ff8f6e", "on-primary": "#ffffff", "on-primary-fixed-variant": "#394b38", "on-background": "#1c1c19", "outline": "#747871", "error-container": "#ffdad6", "on-secondary-container": "#76270e", "secondary-fixed": "#ffdbd1", "surface-variant": "#e5e2dd", "on-tertiary-container": "#9ebbd1", "surface-tint": "#50634e", "tertiary-fixed-dim": "#aecae1" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "margin": "3rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-md": "1rem" }, fontFamily: { "headline-lg-mobile": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"], "title-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, fontSize: { "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fcf9f4;color:#1c1c19;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Open Menu" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-2"><img alt="Élaia Mediterranean Table Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WQbe2FAcmA_kKxaFVGA-DD4XiAjoO_gpjvq7zR9v_RyBdNvCFy-Um5HiTxuxruYvKMYOLRU9FQus7yTVd3blPwwZZIAu__V1-J5xFtJ5VJX0w28h6pmCB52drh4qZIUP5B3tvKMJ2SLC8yx2pA_igcJGeRhAPo-1az-n_m_nxv6L2HEnJY7DP7zjsaEh6dfdRjgsZI1tyRKvtw9AF89_eUMIzGPUBG2WQpuVQRBvr9OZrKENb3KNLyszQ"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight hidden xs:inline">Élaia</span></div></div><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface-variant truncate max-w-[110px] hidden sm:inline">Home</span><a class="w-11 h-11 flex items-center justify-center rounded-full" data-path="story-account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2BU4T-eh5ZIGpd94-x5Pcxa2AkMHlEIBEuFipbKPNGcvIwJdv61WGr1299SMDum-Q4p1T_PHGDwzAOdGJhNQC_lQIrzcd1xdP3MmUpteybFNKaHE28AQ8Rz8b7JNKIMG3QkH66VRHw7-yIRUiHiyFLDI9Vdznx4CVeqzq0IujlWwo9su2EToIJbNCWrcresbL47Ruu4bbFTyON-wrkr0MYwOi6p3oExSrgAgn2AynXn35U4AMCaCh7g"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- 1. Hero Section -->
+<section class="relative px-margin-mobile pt-4 pb-6">
+<div class="relative w-full rounded-xl overflow-hidden shadow-sm bg-surface-container-low">
+<div class="relative h-[360px] w-full">
+<img class="w-full h-full object-cover" data-alt="Sun-drenched Mediterranean dining table on a rustic stone terrace overlooking the azure sea, featuring terracotta bowls of golden cold-pressed olive oil, freshly baked pita, kalamata olives, grilled octopus, and wild rosemary sprigs under dappled olive branch shadows with warm golden hour lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5bLyD8Obx4gTBTl0JvCdt8agowo7VSw4mvZ6lOoGcBpJZrkcAHvuJv7JuiqnWey3-v2jkLZvYfJK_jJwXSv5fe_UnRAFNpz5xL_dODphh_RCNGFDG_oxKkToH4m6Pm-OrZtBlNu49wpXgAopPAQchx-yLMSG-292rAulfPwfRMzsCBsKU93ryGmBCxuGchDZMwH_bAJ8AnmXej5_yf_oQiB2cIgeYA1Atwu1zj-2ExywipHwbbjz7_w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-5 text-on-primary">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-bright/20 backdrop-blur-md self-start mb-2">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">sunny</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Aegean Inspired</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary leading-tight drop-shadow-sm mb-2">
+            A Taste of the Mediterranean
+          </h1>
+<p class="font-body-sm text-body-sm text-surface-variant max-w-xs mb-4 leading-relaxed">
+            Fresh ingredients, traditional Aegean flavors, and warm hospitality by the sea.
+          </p>
+<div class="flex items-center gap-3">
+<a class="flex-1 h-11 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-md active:scale-[0.98] transition-transform" data-path="reserve" href="#">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+              Reserve a Table
+            </a>
+<a class="flex-1 h-11 bg-surface-container-lowest/20 backdrop-blur-md text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform" data-path="menu" href="#">
+<span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+              Explore Menu
+            </a>
+</div>
+</div>
+</div>
+<!-- Quick Reservation Bar Snippet -->
+<div class="p-3 bg-surface-container flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 overflow-x-auto min-w-0">
+<div class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">today</span>
+<span class="font-label-sm text-label-sm font-semibold">Tonight</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">group</span>
+<span class="font-label-sm text-label-sm font-semibold">2 Guests</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span class="font-label-sm text-label-sm font-semibold">7:30 PM</span>
+</div>
+</div>
+<button class="h-9 px-3.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm whitespace-nowrap active:scale-95 transition-transform shadow-sm" onclick="this.innerText='Securing...'; setTimeout(() =&gt; this.innerText='Found!', 800)">
+          Find Table
+        </button>
+</div>
+</div>
+</section>
+<!-- 2. Guest Favorite Spotlight -->
+<section class="px-margin-mobile py-4">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block">Chef's Signature</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Our Guests' Favorite</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Top Rated</span>
+</div>
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="relative h-56 w-full">
+<img class="w-full h-full object-cover" data-alt="Artistically plated charred Mediterranean octopus tentacle with crisp flame grill marks placed gracefully over a silky yellow Santorini split pea fava puree, garnished with delicate caper leaves, micro herbs, paper-thin pickled shallots, and a glistening drizzle of extra virgin green olive oil on an artisan beige ceramic plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATG1kgo_DXFmuq9YQqtF96zI1S36XPWMRHt7JnaeCd-mmB6odsN6nyMxXwZgW1hAanHfoQQrnJkBvDTUiJ7ZjcoMe1wv_hcQOVwnv-S0ma9Fnb7q0f8r6yChbvHB0xp8FabMkCsjDH0LacSrAKuCxid_4OUsFf1RBBHwp_Ic-mxbkacz0DuOlXqBXFQcgiDqnaNUPSdzR7RXO33cWyDhddrQ_9YMcO887DqKavS828x8g8cyBrgKLpFQ"/>
+<div class="absolute top-3 left-3 bg-secondary text-on-secondary px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm uppercase font-semibold tracking-wider">Most Loved</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-lg text-primary font-title-md text-title-md shadow-sm">
+          $28
+        </div>
+</div>
+<div class="p-4">
+<div class="flex items-center justify-between mb-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+            Charred Aegean Octopus &amp; Fava Santorinis
+          </h3>
+</div>
+<div class="flex items-center gap-1.5 mb-2.5">
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(340+ reviews)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+          Slow-braised and flame-kissed octopus served over velvet yellow split pea purée, pickled shallots, caper leaves, and cold-pressed Kalamata olive oil.
+        </p>
+<div class="flex items-center gap-2">
+<button class="flex-1 h-11 bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform" onclick="const toast=document.getElementById('cart-toast'); toast.classList.remove('translate-y-24'); setTimeout(()=&gt;toast.classList.add('translate-y-24'), 2500);">
+<span class="material-symbols-outlined text-[18px]">table_restaurant</span>
+            Order to Table
+          </button>
+<button class="h-11 px-4 bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 active:scale-[0.98] transition-transform" onclick="const modal=document.getElementById('dish-modal'); modal.classList.remove('hidden'); modal.classList.add('flex');">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+            View Dish
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Menu Preview & Filter Chips -->
+<section class="py-4">
+<div class="px-margin-mobile mb-3 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block">Curated Fare</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Menu Preview</h2>
+</div>
+<a class="font-label-md text-label-md text-secondary flex items-center gap-0.5" data-path="menu" href="#">
+        See All <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Category Chips (Horizontal Scroll) -->
+<div class="flex items-center gap-2 overflow-x-auto px-margin-mobile pb-3 scrollbar-none" id="category-pills">
+<button class="menu-pill active-pill px-4 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-primary text-on-primary transition-colors">
+        All
+      </button>
+<button class="menu-pill px-4 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">
+        Mezze
+      </button>
+<button class="menu-pill px-4 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">
+        Grills
+      </button>
+<button class="menu-pill px-4 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">
+        Seafood
+      </button>
+<button class="menu-pill px-4 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">
+        Salads
+      </button>
+<button class="menu-pill px-4 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">
+        Mains
+      </button>
+<button class="menu-pill px-4 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">
+        Desserts
+      </button>
+<button class="menu-pill px-4 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">
+        Wines
+      </button>
+</div>
+<!-- Swipeable Cards Carousel -->
+<div class="flex gap-4 overflow-x-auto px-margin-mobile pt-1 pb-4 snap-x snap-mandatory scrollbar-none">
+<!-- Dish Card 1 -->
+<div class="snap-start shrink-0 w-[240px] bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Golden crisp Greek spanakopita phyllo pastries folded into triangles, sprinkled with toasted sesame seeds and fresh dill, served warm on a textured ceramic surface with lemon wedges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIyLORWfveWDjms9NRKUc8iIon7LOa03jET02tqpOKwHbqo8IrmFv6s8mgXdm45D7LXGQcd0zHh_xssI6-ITeKZMK5jM5WpoK5Z1te2iZ7Vc8-Sd8lSh7YbIbw7b_iQHzXnCNHrMsydAtjQMw7l8iUDvmtVm2a9B54jiH0EwIy_gUDv14quukgCk2dqc8jKaby9aZQ52T62RHkC-pMYSofLa8T-PvKiH7zdDzR5X6B2hreoQKDgg-g0w"/>
+<span class="absolute top-2.5 right-2.5 bg-surface-bright/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded">
+            $14
+          </span>
+</div>
+<div class="p-3.5 flex flex-col justify-between flex-1">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface leading-tight mb-1">
+              Spanakopita Phyllo Triangles
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Wild mountain greens, barrel-aged feta, and fresh dill wrapped in crispy handcrafted pastry.
+            </p>
+</div>
+<button class="mt-3 w-full h-9 bg-surface-container-high text-on-surface hover:bg-secondary hover:text-on-secondary rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span> Add to Order
+          </button>
+</div>
+</div>
+<!-- Dish Card 2 -->
+<div class="snap-start shrink-0 w-[240px] bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Sizzling skewers of spiced minced lamb kebab cooked in a cast iron skillet over charcoal, paired with bright sumac dusted red onion salad, charred green pepper, and warm handmade pita." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsvxq0auen0G22uNREaC6la9P1XxdWO8XdbjKSiuHXfaf-h9dh9WRRi-QZWk2ABIzlGbzsu_zwyjDF4nxGXD_wbdH8XNSkNeXBbWyxJjdno5-TFUuyqa0wXt5XOpFyIZgVL8vZX_9mXvg8v3-U3UvJQPByxEeypzKTaZJPULhS3sBbMIgBHb3t48spAe8ygfYSlarMbtaUrgVnJx3DNToeWi-dye8wfX09BDAB1WCz0Ttj_saTFdtIHQ"/>
+<span class="absolute top-2.5 right-2.5 bg-surface-bright/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded">
+            $26
+          </span>
+</div>
+<div class="p-3.5 flex flex-col justify-between flex-1">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface leading-tight mb-1">
+              Cast-Iron Lamb Kebab
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Sumac red onion salad, charred peppers, and fresh house pita drizzled with herb tallow.
+            </p>
+</div>
+<button class="mt-3 w-full h-9 bg-surface-container-high text-on-surface hover:bg-secondary hover:text-on-secondary rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span> Add to Order
+          </button>
+</div>
+</div>
+<!-- Dish Card 3 -->
+<div class="snap-start shrink-0 w-[240px] bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Golden fried domatokeftedes tomato fritters prepared with sweet Santorini cherry tomatoes, mint, and oregano, accompanied by a side of chilled whipped cucumber tzatziki on a terracotta dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsZn0BM7rbpECPo8v-OUb5wc8FNTOlGvAxcDf0iwvIzwCc8dgxdeLAjuVAzhNKzWULq2L_Ry-g4nC-EuWR3Jcner_gT6v44vlXnUYIh3im_puxncj2BSrj-4YSwvZr-NPgODl9Ku6vcEasxd0hWrvvJ49sSoGdv6kfuTbRMeej5JL4WC7_itrU5cr9rCIx3jK4R489mmZvB19geAPrU6l8S3GXk5miByT-w9h-DGNZfOI--JFT8IfYnw"/>
+<span class="absolute top-2.5 right-2.5 bg-surface-bright/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded">
+            $16
+          </span>
+</div>
+<div class="p-3.5 flex flex-col justify-between flex-1">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface leading-tight mb-1">
+              Santorini Tomato Fritters
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Heirloom cherry tomatoes, wild spearmint, crushed coriander, and cooling whipped tzatziki.
+            </p>
+</div>
+<button class="mt-3 w-full h-9 bg-surface-container-high text-on-surface hover:bg-secondary hover:text-on-secondary rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span> Add to Order
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Mediterranean Story Editorial Teaser -->
+<section class="px-margin-mobile py-4">
+<div class="relative bg-primary text-on-primary rounded-xl overflow-hidden shadow-md p-6">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-primary-container/40 blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">psychiatry</span>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider font-semibold">Our Provenance</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-3 leading-snug">
+        Rooted in Heritage &amp; Sun-Drenched Soil
+      </h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest mb-5 leading-relaxed">
+        From third-generation family olive groves in the Peloponnese to the wood-fired stone hearths in our kitchen, Élaia honors timeless coastal cooking traditions where every dish begins with patient harvesting and pure intention.
+      </p>
+<div class="flex items-center gap-3 pt-2">
+<img class="w-12 h-12 rounded-full object-cover shadow-inner" data-alt="Intimate portrait of Mediterranean female chef Elena Rossi in linen culinary attire smiling gently in a sunlit open restaurant kitchen with fresh rosemary and olive oil bottles on stone counters." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWuSgp4T-h2tk_Ab3kucaT4qn1aZ09QvycGs0hTRFlspsJH8s52ASKnOj_f0za9zLEloMHMceTGpRHLUA4kAKbEG85noiJcJwxJPgY2SZE7UAfzmDtwVd5iKFumcROCbI8sgPwSC1f2oQwrh0PMMZohzwmFBV7qhX3K7OKwDsjFRjKTtIUrHRySAs4Evgx176pN5qm21n3Anl0d4S4qBh8BNgV_fE7uU90ZQAzTb76WShtMx5eUCWx_g"/>
+<div class="min-w-0 flex-1">
+<p class="font-title-md text-title-md text-on-primary truncate">Elena Rossi</p>
+<p class="font-label-sm text-label-sm text-primary-fixed truncate">Executive Chef &amp; Co-Founder</p>
+</div>
+</div>
+<a class="mt-5 inline-flex items-center gap-1.5 font-label-md text-label-md text-secondary-fixed hover:text-secondary-fixed-dim transition-colors" data-path="story-account" href="#">
+<span>Discover Our Story &amp; Meet Chef Elena Rossi</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- 5. Testimonial Carousel -->
+<section class="px-margin-mobile py-4">
+<div class="bg-surface-container rounded-xl p-5 shadow-sm relative overflow-hidden">
+<span class="material-symbols-outlined text-[48px] text-surface-container-highest absolute -right-2 -bottom-2 select-none pointer-events-none opacity-60">
+        format_quote
+      </span>
+<div class="flex items-center gap-1 text-secondary mb-2.5">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-headline-sm text-headline-sm text-on-surface mb-3 italic leading-relaxed">
+        “The closest you will get to an authentic sunset dinner on the Cyclades. The olive oil alone is worth the visit.”
+      </blockquote>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-md text-label-md font-bold">
+          S
+        </div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-semibold text-on-surface">Sophia K.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+            Verified Guest • Dining occasion: Anniversary
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Location & Hours Quick Card -->
+<section class="px-margin-mobile pt-3 pb-6">
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm flex flex-col gap-3.5">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">location_on</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-title-md text-title-md text-on-surface leading-tight">428 Coastal Vista Way</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Marina Promenade, Waterfront District</p>
+</div>
+</div>
+<div class="flex items-center justify-between py-2 px-3 bg-surface-container rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Open Today</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">11:30 AM – 10:30 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<a class="flex-1 h-11 bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+          Get Directions
+        </a>
+<a aria-label="Call Restaurant" class="w-12 h-11 bg-surface-container text-on-surface rounded-lg flex items-center justify-center active:scale-95 transition-transform" href="tel:+18005553524">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Toast for micro-interaction -->
+<div class="fixed bottom-20 inset-x-4 max-w-sm mx-auto bg-primary text-on-primary p-3 rounded-lg shadow-xl flex items-center justify-between transform translate-y-24 transition-transform duration-300 z-50 pointer-events-none" id="cart-toast">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span class="font-label-sm text-label-sm">Added Octopus &amp; Fava to table order</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed underline">View</span>
+</div>
+<!-- Detail Modal for micro-interaction -->
+<div class="hidden fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm p-4 items-center justify-center" id="dish-modal" onclick="if(event.target === this) { this.classList.add('hidden'); this.classList.remove('flex'); }">
+<div class="bg-surface-container-lowest rounded-xl max-w-sm w-full p-5 shadow-2xl relative">
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="const modal=document.getElementById('dish-modal'); modal.classList.add('hidden'); modal.classList.remove('flex');">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="w-full h-36 rounded-lg overflow-hidden mb-3">
+<img class="w-full h-full object-cover" data-alt="Close up presentation of tender grilled Mediterranean octopus sprinkled with smoked paprika, sea salt flakes, and fresh lemon wedge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp1ChNstDEQv_jCVeHyOC-whzLGx25aoZq7fPTjNNRfpljaS0xTMwFU5RlFFNVhmgnM_PXDC_VZOEP7LMUZHrJ8H6KqTf0qXveBQWQ3wzO5OrXJCmJCwSkphQqlN5OjO_ZjmJgWYBkrFc9OAYl_ch2MznLMPcTVA4Pomr8VO7waQMbVcWHcd-VAV-bm30IRz7ZIlSQ1Nb8aKWYOP3HduxzrKmstP5iOEb7xpF2Qgsj0PrRg7CUUzhsjg"/>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Signature Mezze</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-2">Charred Aegean Octopus</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+        Hand-selected Mediterranean octopus is braised gently with bay leaves, red wine vinegar, and peppercorns for 3 hours, then seared over burning olive wood coals for caramelization.
+      </p>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$28</span>
+<button class="h-10 px-4 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md flex items-center gap-1" onclick="const modal=document.getElementById('dish-modal'); modal.classList.add('hidden'); modal.classList.remove('flex'); const toast=document.getElementById('cart-toast'); toast.classList.remove('translate-y-24'); setTimeout(()=&gt;toast.classList.add('translate-y-24'), 2500);">
+          Add to Order
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Category Pill Filter Interactions
+  document.querySelectorAll('#category-pills .menu-pill').forEach(pill => {
+    pill.addEventListener('click', function() {
+      document.querySelectorAll('#category-pills .menu-pill').forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary');
+        p.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      this.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      this.classList.add('bg-primary', 'text-on-primary');
+    });
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(30,58,76,0.06)]" data-active-classes="text-secondary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-secondary font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">restaurant</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Menu</span></a><a class="flex flex-col items-center justify-center -mt-5 group" data-path="reserve" href="#"><div class="w-13 h-13 p-3 rounded-full bg-secondary text-on-secondary shadow-[0_8px_20px_-4px_rgba(156,67,40,0.4)] flex items-center justify-center transition-transform active:scale-95"><span class="material-symbols-outlined text-[24px]">event_seat</span></div><span class="font-label-sm text-label-sm text-secondary font-semibold mt-1 tracking-tight">Reserve</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="loyalty" href="#"><span class="material-symbols-outlined text-[22px]">card_giftcard</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Loyalty</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="story-account" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Story</span></a></div></nav></body></html>
